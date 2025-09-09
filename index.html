@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        background-color: #4534f2;
+        margin-left: 10px;
+        padding-left: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+      .zak {
+        border-radius: 400px;
+        background-color: #4b25d0;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-wrap: wrap;
+      }
+      .second {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .daul {
+        font-family: Arial, Helvetica, sans-serifs;
+      }
+      .dalban {
+        font-size: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 90px;
+        margin-bottom: 0;
+        color: white;
+      }
+      .komek {
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0;
+        margin-bottom: 90px;
+      }
+      .sech1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .secp1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+      }
+      .div1 {
+        background-color: hsl(0, 77%, 71%);
+        display: flex;
+        justify-content: space-between;
+        font-size: 40px;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        color: hsl(0, 75%, 45%);
+      }
+      .div2 {
+        background-color: hsl(39, 95%, 74%);
+        font-size: 40px;
+        border-radius: 10px;
+        padding: 8px;
+        margin: 10px;
+        color: hsl(39, 100%, 50%);
+      }
+      .div3 {
+        background-color: hsl(166, 100%, 76%);
+        font-size: 40px;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        color: hsl(166, 100%, 25%);
+      }
+      .div4 {
+        background-color: hsl(234, 100%, 66%);
+        font-size: 40px;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        color: hsl(234, 85%, 45%);
+      }
+      .sum {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #303b59;
+        margin-bottom: 120px;
+      }
+      .buttoon {
+        background-color: #303b59;
+        border: none;
+        border-radius: 20px;
+        font-size: 40px;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+      body {
+        background-color: hsl(221, 100%, 96%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="all">
+      <div class="container">
+        <h1 class="daul" style="color: hsl(241, 100%, 89%)">Your Result</h1>
+        <div class="zak">
+          <h1 class="dalban">76</h1>
+          <p class="komek" style="color: hsl(221, 100%, 96%)">of 100</p>
+        </div>
+        <div class="containtext">
+          <h1 class="sech1">Great</h1>
+          <p class="secp1">
+            You scored higher than 65% of <br />
+            the people who have taken <br />
+            these tests.
+          </p>
+        </div>
+      </div>
+      <div class="second">
+        <h1 class="sum">Summary</h1>
+        <div class="div1">
+          <img src="assets/images/icon-reaction.svg" alt="energy" />
+          <span>Reaction</span>
+          <span style="color: #303b59"><b> 80</b> / 100</span>
+        </div>
+        <div class="div2">
+          <img src="assets/images/icon-memory.svg" alt="memory" />
+          <span>Memory</span>
+          <span style="color: #303b59"><b>92</b> / 100</span>
+        </div>
+        <div class="div3">
+          <img src="assets/images/icon-verbal.svg" alt="Verbal" />
+          <span>Verbal</span>
+          <span style="color: #303b59"><b>61</b> / 100</span>
+        </div>
+        <div class="div4">
+          <img src="assets/images/icon-visual.svg" alt="visual" />
+          <span>Visual</span>
+          <span style="color: #303b59"><b>72</b> / 100</span>
+        </div>
+        <div>
+          <button class="buttoon">Continue</button>
+        </div>
+      </div>
+    </div>
+    <!--Your Result 76 of 100 Great You scored higher than 65% of the people who
+    have taken these tests. Summary Reaction 80 / 100 Memory 92 / 100 Verbal 61
+    / 100 Visual 72 / 100 Continue-->
+  </body>
+</html>
